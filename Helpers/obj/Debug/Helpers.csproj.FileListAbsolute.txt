@@ -1,0 +1,6 @@
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Helpers\bin\Debug\Helpers.dll
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Helpers\bin\Debug\Helpers.pdb
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Helpers\obj\Debug\Helpers.csprojResolveAssemblyReference.cache
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Helpers\obj\Debug\Helpers.csproj.CoreCompileInputs.cache
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Helpers\obj\Debug\Helpers.dll
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Helpers\obj\Debug\Helpers.pdb

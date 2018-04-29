@@ -1,0 +1,5 @@
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Application\obj\Debug\Application.csprojResolveAssemblyReference.cache
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Application\obj\Debug\MainWindow.g.cs
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Application\obj\Debug\App.g.cs
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Application\obj\Debug\Application_MarkupCompile.cache
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Application\obj\Debug\Application_MarkupCompile.lref

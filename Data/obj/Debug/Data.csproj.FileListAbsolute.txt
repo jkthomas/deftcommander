@@ -1,0 +1,6 @@
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Data\bin\Debug\Data.dll
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Data\bin\Debug\Data.pdb
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Data\obj\Debug\Data.dll
+C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Data\obj\Debug\Data.pdb
