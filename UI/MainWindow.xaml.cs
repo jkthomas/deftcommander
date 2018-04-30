@@ -25,10 +25,15 @@ namespace UI
         public ObservableCollection<string> Dirs { get; set; }
         public MainWindow()
         {
-            DirectoryListViewModel directoryList = new DirectoryListViewModel();
+            /* DirectoryListViewModel directoryList = new DirectoryListViewModel();
             Dirs = directoryList.CurrentTree;
             InitializeComponent();
-            DataContext = this;
+            DataContext = this; */
+
+            //TODO: ADD FOCUS ON ELEMENT
+            //TODO: Manage listbox KeyBindings in XAML
+            InitializeComponent();
+            DataContext = new DirectoryListViewModel();         
         }
     }
 }

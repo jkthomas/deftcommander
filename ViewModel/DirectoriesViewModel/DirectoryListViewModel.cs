@@ -5,6 +5,8 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Helpers.Commands;
 using Helpers.SystemDirectories;
 
 namespace ViewModel.DirectoriesViewModel
@@ -13,11 +15,10 @@ namespace ViewModel.DirectoriesViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged = (sender, e) => { };
 
-        public DirectoryListViewModel()
-        {
-            this.CurrentPath = null;
-            this.CurrentTree = new ObservableCollection<string>(WindowsDirectoryAcquireService.GetComputerDrives());
-        }
+        #region Commands
+        public ICommand ChangeCurrentTreeCommand { get; set; }
+        public ICommand ReturnToParentTreeCommand { get; set; }
+        #endregion
 
         #region Current path and tree fields
         private string _currentPath;
@@ -49,6 +50,38 @@ namespace ViewModel.DirectoriesViewModel
         }
         #endregion
 
+        public DirectoryListViewModel()
+        {
+            this.CurrentTree = new ObservableCollection<string>(WindowsDirectoryAcquireService.GetComputerDrives());
+            this.CurrentPath = CurrentTree.First().ToString();
+            this.ChangeCurrentTreeCommand = new RelayCommand(this.ChangeCurrentTree);
+            this.ReturnToParentTreeCommand = new RelayCommand(this.ReturnToParentTree);
+        }
 
+        public void ChangeCurrentTree()
+        {
+            try
+            {
+                this.CurrentTree = new ObservableCollection<string>(WindowsDirectoryAcquireService.GetDiretoryTree(CurrentPath));
+                this.CurrentPath = CurrentTree.First().ToString();
+            }
+            catch (Exception e)
+            {
+                //TODO: Add message box
+            }
+        }
+
+        public void ReturnToParentTree()
+        {
+            try
+            {
+                this.CurrentTree = new ObservableCollection<string>(WindowsDirectoryAcquireService.GetDirectoryParent(CurrentPath));
+                this.CurrentPath = CurrentTree.First().ToString();
+            }
+            catch (Exception e)
+            {
+                //TODO: Add message box
+            }
+        }
     }
 }

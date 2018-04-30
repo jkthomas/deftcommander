@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox HorizontalAlignment="Left" Height="328" Margin="245,49,0,0" VerticalAlignment="Top" Width="307" ItemsSource="{Binding Dirs}" />
+        <ListBox HorizontalAlignment="Left" Height="328" Margin="245,49,0,0" VerticalAlignment="Top" Width="307"
+                 ItemsSource="{Binding CurrentTree}" SelectedItem="{Binding CurrentPath}">
+            <ListBox.InputBindings>
+                <KeyBinding Key="Enter" 
+                    Command="{Binding COMMANDNAME}" 
+                    CommandParameter="{Binding Path=TEST}"/>
+                <KeyBinding Key="Backspace" 
+                            Command="{Binding COMMANDNAME}"
+                            CommandParameter="{Binding Path=TEST}"/>
+            </ListBox.InputBindings>
+        </ListBox>
     </Grid>
 </Window>
