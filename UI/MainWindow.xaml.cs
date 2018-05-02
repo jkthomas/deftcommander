@@ -22,18 +22,13 @@ namespace UI
     /// </summary>
     public partial class MainWindow : Window
     {
-        public ObservableCollection<string> Dirs { get; set; }
         public MainWindow()
         {
-            /* DirectoryListViewModel directoryList = new DirectoryListViewModel();
-            Dirs = directoryList.CurrentTree;
-            InitializeComponent();
-            DataContext = this; */
 
             //TODO: ADD FOCUS ON ELEMENT
             //TODO: Manage listbox KeyBindings in XAML
             InitializeComponent();
-            DataContext = new DirectoryListViewModel();         
+            DataContext = new CommanderViewModel();
         }
     }
 }

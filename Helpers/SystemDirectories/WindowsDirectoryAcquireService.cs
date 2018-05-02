@@ -47,10 +47,24 @@ namespace Helpers.SystemDirectories
             return tree;
         }
 
-        public static List<string> GetDirectoryParent(string path)
+        public static List<string> GetDirectoryParentTree(string path)
         {
-            string parent = Directory.GetParent(path).ToString();
-            if (parent.Count() == 4)
+            string parent;
+            try
+            {
+                parent = Directory.GetParent(path).ToString();
+                if (parent.Length == 3)
+                {
+                    return Directory.GetLogicalDrives().ToList();
+                }
+            }
+            catch (Exception e)
+            {
+                return Directory.GetLogicalDrives().ToList();
+            }
+
+            parent = Directory.GetParent(parent).ToString();
+            if (parent.Length == 3)
             {
                 return Directory.GetLogicalDrives().ToList();
             }

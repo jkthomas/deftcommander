@@ -75,7 +75,7 @@ namespace ViewModel.DirectoriesViewModel
         {
             try
             {
-                this.CurrentTree = new ObservableCollection<string>(WindowsDirectoryAcquireService.GetDirectoryParent(CurrentPath));
+                this.CurrentTree = new ObservableCollection<string>(WindowsDirectoryAcquireService.GetDirectoryParentTree(CurrentPath));
                 this.CurrentPath = CurrentTree.First().ToString();
             }
             catch (Exception e)

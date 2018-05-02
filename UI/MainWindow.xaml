@@ -5,17 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        FocusManager.FocusedElement="{Binding ElementName=LeftPanel}">
     <Grid>
-        <ListBox HorizontalAlignment="Left" Height="328" Margin="245,49,0,0" VerticalAlignment="Top" Width="307"
-                 ItemsSource="{Binding CurrentTree}" SelectedItem="{Binding CurrentPath}">
+        <ListBox Name="LeftPanel" HorizontalAlignment="Left" Height="400" Margin="10,10,0,0" VerticalAlignment="Top" Width="300"
+                 ItemsSource="{Binding FirstDirectoryViewModel.CurrentTree}" SelectedItem="{Binding FirstDirectoryViewModel.CurrentPath}">
             <ListBox.InputBindings>
-                <KeyBinding Key="Enter" 
-                    Command="{Binding COMMANDNAME}" 
-                    CommandParameter="{Binding Path=TEST}"/>
+                <KeyBinding Key="Enter"
+                            Command="{Binding FirstDirectoryViewModel.ChangeCurrentTreeCommand}" />
                 <KeyBinding Key="Backspace" 
-                            Command="{Binding COMMANDNAME}"
-                            CommandParameter="{Binding Path=TEST}"/>
+                            Command="{Binding FirstDirectoryViewModel.ReturnToParentTreeCommand}"/>
+            </ListBox.InputBindings>
+        </ListBox>
+        <ListBox Name="RightPanel" HorizontalAlignment="Left" Height="400" Margin="482,10,0,0" VerticalAlignment="Top" Width="300"
+                 ItemsSource="{Binding SecondDirectoryViewModel.CurrentTree}" SelectedItem="{Binding SecondDirectoryViewModel.CurrentPath}">
+            <ListBox.InputBindings>
+                <KeyBinding Key="Enter"
+                            Command="{Binding SecondDirectoryViewModel.ChangeCurrentTreeCommand}" />
+                <KeyBinding Key="Backspace" 
+                            Command="{Binding SecondDirectoryViewModel.ReturnToParentTreeCommand}"/>
             </ListBox.InputBindings>
         </ListBox>
     </Grid>

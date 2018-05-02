@@ -42,9 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DirectoriesViewModel\BaseViewModel.cs" />
+    <Compile Include="DirectoriesViewModel\CommanderViewModel.cs" />
     <Compile Include="DirectoriesViewModel\DirectoryListViewModel.cs" />
-    <Compile Include="DirectoriesViewModel\DirectoryTreeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
