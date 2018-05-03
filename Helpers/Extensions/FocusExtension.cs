@@ -31,7 +31,7 @@ namespace Helpers.Extensions
             var uie = (UIElement)d;
             if ((bool)e.NewValue)
             {
-                uie.Focus(); // Don't care about false values.
+                uie.Focus();
             }
         }
     }
