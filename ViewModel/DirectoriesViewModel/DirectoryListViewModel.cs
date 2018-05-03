@@ -20,9 +20,10 @@ namespace ViewModel.DirectoriesViewModel
         public ICommand ReturnToParentTreeCommand { get; set; }
         #endregion
 
-        #region Current path and tree fields
+        #region Fields
         private string _currentPath;
         private ObservableCollection<string> _currentTree;
+        private bool _isFocused;
         public string CurrentPath
         {
             get { return this._currentPath; }
@@ -46,6 +47,19 @@ namespace ViewModel.DirectoriesViewModel
 
                 this._currentTree = value;
                 PropertyChanged(this, new PropertyChangedEventArgs(nameof(CurrentTree)));
+            }
+        }
+        
+        public bool IsFocused
+        {
+            get { return this._isFocused; }
+            set
+            {
+                if (this._isFocused == value)
+                    return;
+
+                this._isFocused = value;
+                PropertyChanged(this, new PropertyChangedEventArgs(nameof(IsFocused)));
             }
         }
         #endregion

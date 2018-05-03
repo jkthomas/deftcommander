@@ -18,3 +18,23 @@ C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\UI\obj\Debug\UI.csproj.Co
 C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\UI\obj\Debug\UI.csproj.CopyComplete
 C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\UI\obj\Debug\UI.exe
 C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\UI\obj\Debug\UI.pdb
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\bin\Debug\UI.exe.config
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\bin\Debug\UI.exe
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\bin\Debug\UI.pdb
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\bin\Debug\ViewModel.dll
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\bin\Debug\Helpers.dll
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\bin\Debug\ViewModel.pdb
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\bin\Debug\Helpers.pdb
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\MainWindow.g.cs
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\App.g.cs
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI_MarkupCompile.cache
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI_MarkupCompile.lref
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\MainWindow.baml
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI.g.resources
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI.Properties.Resources.resources
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI.csproj.GenerateResource.cache
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI.csproj.CopyComplete
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI.exe
+D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI.pdb

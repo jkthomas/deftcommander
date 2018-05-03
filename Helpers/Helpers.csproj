@@ -44,8 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="Extensions\FocusExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemDirectories\WindowsDirectoryAcquireService.cs" />
+    <Compile Include="SystemDirectories\WindowsDirectoryOperationsService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

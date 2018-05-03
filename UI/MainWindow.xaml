@@ -4,11 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
+        xmlns:help="clr-namespace:Helpers.Extensions;assembly=Helpers"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        FocusManager.FocusedElement="{Binding ElementName=LeftPanel}">
+        Title="MainWindow" Height="450" Width="800">
+        <!-- FocusManager.FocusedElement="{Binding ElementName=LeftPanel}" -->
     <Grid>
+        <Grid.InputBindings>
+            <KeyBinding Key="S"
+                            Command="{Binding SwitchFocusCommand}" />
+        </Grid.InputBindings>
         <ListBox Name="LeftPanel" HorizontalAlignment="Left" Height="400" Margin="10,10,0,0" VerticalAlignment="Top" Width="300"
+                 help:FocusExtension.IsFocused="{Binding FirstDirectoryViewModel.IsFocused}"
                  ItemsSource="{Binding FirstDirectoryViewModel.CurrentTree}" SelectedItem="{Binding FirstDirectoryViewModel.CurrentPath}">
             <ListBox.InputBindings>
                 <KeyBinding Key="Enter"
@@ -18,6 +24,7 @@
             </ListBox.InputBindings>
         </ListBox>
         <ListBox Name="RightPanel" HorizontalAlignment="Left" Height="400" Margin="482,10,0,0" VerticalAlignment="Top" Width="300"
+                 help:FocusExtension.IsFocused="{Binding SecondDirectoryViewModel.IsFocused}"
                  ItemsSource="{Binding SecondDirectoryViewModel.CurrentTree}" SelectedItem="{Binding SecondDirectoryViewModel.CurrentPath}">
             <ListBox.InputBindings>
                 <KeyBinding Key="Enter"

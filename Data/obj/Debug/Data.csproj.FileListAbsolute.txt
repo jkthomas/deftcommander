@@ -4,3 +4,9 @@ C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Data\obj\Debug\Data.cspro
 C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
 C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Data\obj\Debug\Data.dll
 C:\Aplikacje\Visual Studio 2017 Projects\deftcommander\Data\obj\Debug\Data.pdb
+D:\Aplikacje\VisualStudioProjects\DeftCommander\Data\bin\Debug\Data.dll
+D:\Aplikacje\VisualStudioProjects\DeftCommander\Data\bin\Debug\Data.pdb
+D:\Aplikacje\VisualStudioProjects\DeftCommander\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+D:\Aplikacje\VisualStudioProjects\DeftCommander\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+D:\Aplikacje\VisualStudioProjects\DeftCommander\Data\obj\Debug\Data.dll
+D:\Aplikacje\VisualStudioProjects\DeftCommander\Data\obj\Debug\Data.pdb
