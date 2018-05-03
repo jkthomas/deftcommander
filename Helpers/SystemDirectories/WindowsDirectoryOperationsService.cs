@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Helpers.SystemDirectories
 {
-    class WindowsDirectoryOperationsService
+    public class WindowsDirectoryOperationsService
     {
         public static void DeleteDirectory(string path)
         {
@@ -27,10 +27,10 @@ namespace Helpers.SystemDirectories
 
         public static void CreateDirectory(string path, string name)
         {
-            if (!Directory.Exists(path))
+            string fullPath = path + "\\" + name;
+            if (!Directory.Exists(fullPath))
             {
-                string newFile = path + name;
-                Directory.CreateDirectory(newFile);
+                Directory.CreateDirectory(fullPath);
             }
         }
 

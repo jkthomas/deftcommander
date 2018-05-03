@@ -47,6 +47,11 @@ namespace Helpers.SystemDirectories
             return tree;
         }
 
+        public static string GetParent(string path)
+        {
+            return Directory.GetParent(path).ToString();
+        }
+
         public static List<string> GetDirectoryParentTree(string path)
         {
             string parent;

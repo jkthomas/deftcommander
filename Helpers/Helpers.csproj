@@ -43,6 +43,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\ParameterCommand.cs" />
     <Compile Include="Commands\RelayCommand.cs" />
     <Compile Include="Extensions\FocusExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
