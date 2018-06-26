@@ -81,7 +81,7 @@ namespace ViewModel.DirectoriesViewModel
             }
             catch (Exception e)
             {
-                //TODO: Add message box
+                Console.WriteLine("An empty directory or general failure: " + e.Message);
             }
         }
 
@@ -94,7 +94,7 @@ namespace ViewModel.DirectoriesViewModel
             }
             catch (Exception e)
             {
-                //TODO: Add message box
+                Console.WriteLine("An empty directory or general failure: " + e.Message);
             }
         }
     }

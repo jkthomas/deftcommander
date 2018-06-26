@@ -38,7 +38,6 @@ namespace ViewModel.DirectoriesViewModel
         public DirectoryListViewModel FirstDirectoryViewModel { get; set; }
         public DirectoryListViewModel SecondDirectoryViewModel { get; set; }
 
-        //TODO: Implement all methods with command parameter
         #region Methods
         public void SwitchFocus()
         {

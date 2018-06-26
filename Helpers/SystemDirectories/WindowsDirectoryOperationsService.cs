@@ -20,7 +20,7 @@ namespace Helpers.SystemDirectories
                 }
                 catch (Exception e)
                 {
-                    //TODO: MessageBox
+                    Console.WriteLine("An error has occured: " + e.Message);
                 }
             }
         }
@@ -28,62 +28,92 @@ namespace Helpers.SystemDirectories
         public static void CreateDirectory(string path, string name)
         {
             string fullPath = path + "\\" + name;
-            if (!Directory.Exists(fullPath))
+            try
             {
-                Directory.CreateDirectory(fullPath);
+                if (!Directory.Exists(fullPath))
+                {
+                    Directory.CreateDirectory(fullPath);
+                }
             }
+            catch (Exception e)
+            {
+                Console.WriteLine("An error has occured: " + e.Message);
+            }
+
         }
 
         public static void MoveDirectory(string sourcePath, string destinationPath)
         {
-            if (!sourcePath.Equals(destinationPath))
+            try
             {
-                if (Directory.Exists(destinationPath))
+                if (!sourcePath.Equals(destinationPath))
                 {
-                    return;
+                    if (Directory.Exists(destinationPath))
+                    {
+                        return;
+                    }
+                    Directory.Move(sourcePath, destinationPath);
                 }
-                Directory.Move(sourcePath, destinationPath);
             }
+            catch (Exception e)
+            {
+                Console.WriteLine("An error has occured: " + e.Message);
+            }
+
         }
 
         public static void CopyDirectory(string sourcePath, string destinationPath)
         {
-            if (!sourcePath.Equals(destinationPath))
+            try
             {
-                if (Directory.Exists(destinationPath))
+                if (!sourcePath.Equals(destinationPath))
                 {
-                    return;
+                    if (Directory.Exists(destinationPath))
+                    {
+                        return;
+                    }
+                    DirectoryCopy(sourcePath, destinationPath);
                 }
-                DirectoryCopy(sourcePath, destinationPath);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("An error has occured: " + e.Message);
             }
         }
 
         private static void DirectoryCopy(string sourcePath, string destinationPath)
         {
-            DirectoryInfo dir = new DirectoryInfo(sourcePath);
-
-            if (!dir.Exists)
+            try
             {
-                return;
+                DirectoryInfo dir = new DirectoryInfo(sourcePath);
+
+                if (!dir.Exists)
+                {
+                    return;
+                }
+                if (!Directory.Exists(destinationPath))
+                {
+                    Directory.CreateDirectory(destinationPath);
+                }
+
+                DirectoryInfo[] dirs = dir.GetDirectories();
+
+                FileInfo[] files = dir.GetFiles();
+                foreach (FileInfo file in files)
+                {
+                    string tempPath = Path.Combine(destinationPath, file.Name);
+                    file.CopyTo(tempPath, false);
+                }
+
+                foreach (DirectoryInfo subDir in dirs)
+                {
+                    string tempPath = Path.Combine(destinationPath, subDir.Name);
+                    DirectoryCopy(subDir.FullName, tempPath);
+                }
             }
-            if (!Directory.Exists(destinationPath))
+            catch (Exception e)
             {
-                Directory.CreateDirectory(destinationPath);
-            }
-
-            DirectoryInfo[] dirs = dir.GetDirectories();
-
-            FileInfo[] files = dir.GetFiles();
-            foreach (FileInfo file in files)
-            {
-                string tempPath = Path.Combine(destinationPath, file.Name);
-                file.CopyTo(tempPath, false);
-            }
-
-            foreach (DirectoryInfo subDir in dirs)
-            {
-                string tempPath = Path.Combine(destinationPath, subDir.Name);
-                DirectoryCopy(subDir.FullName, tempPath);
+                Console.WriteLine("An error has occured: " + e.Message);
             }
         }
     }

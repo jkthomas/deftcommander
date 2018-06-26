@@ -25,7 +25,6 @@ D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\bin\Debug\ViewModel.dll
 D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\bin\Debug\Helpers.dll
 D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\bin\Debug\ViewModel.pdb
 D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\bin\Debug\Helpers.pdb
-D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
 D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\MainWindow.g.cs
 D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\App.g.cs
 D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI_MarkupCompile.cache
@@ -38,3 +37,4 @@ D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI.csproj.CoreCompi
 D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI.csproj.CopyComplete
 D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI.exe
 D:\Aplikacje\VisualStudioProjects\DeftCommander\UI\obj\Debug\UI.pdb
+D:\Aplikacje\VisualStudioProjects\deftcommander\UI\obj\Debug\UI.csprojAssemblyReference.cache
